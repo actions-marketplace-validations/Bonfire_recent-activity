@@ -33727,7 +33727,7 @@ Toolkit.run(
       // Add one since the content needs to be inserted just after the initial comment
       startIdx++;
       content.forEach((line, idx) =>
-        readmeContent.splice(startIdx + idx, 0, `${idx + 1}. ${line}`)
+        readmeContent.splice(startIdx + idx, 0, `${line}`)
       );
 
       // Append <!--RECENT_ACTIVITY:end--> comment
@@ -33751,15 +33751,7 @@ Toolkit.run(
       }
       tools.exit.success("Wrote to README");
     }
-
-    // const oldContent = readmeContent.slice(startIdx + 1, endIdx).join("\n");
-    // const newContent = content
-    //   .map((line, idx) => `${idx + 1}. ${line}`)
-    //   .join("\n");
-
-    // // if (oldContent.trim() === newContent.trim())
-    // //   tools.exit.success("No changes detected.");
-
+    
     startIdx++;
 
     // Recent GitHub Activity content between the comments
@@ -33773,7 +33765,7 @@ Toolkit.run(
       if (!line) {
         return true;
       }
-      readmeContent.splice(startIdx + idx, 0, `${idx + 1}. ${line}`);
+      readmeContent.splice(startIdx + idx, 0, `${line}`);
     });
     readmeContent = appendDate(readmeContent);
     tools.log.success("Updated README with the recent activity");
