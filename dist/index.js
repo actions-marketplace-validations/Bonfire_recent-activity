@@ -33313,7 +33313,7 @@ const toUrlFormat = (item, type) => {
     }
     return url;
   }
-  url = `<a href="${process.env.GITHUB_SERVER_URL}/${item}"><b>${item}</b></a>`;
+  return `<a href="${process.env.GITHUB_SERVER_URL}/${item}"><b>${item}</b></a>`;
 };
 
 module.exports = toUrlFormat;
