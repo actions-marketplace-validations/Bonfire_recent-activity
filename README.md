@@ -17,3 +17,7 @@ Then, in your README file, structure your recent activity like so:
 ```
 
 Lastly, use the latest version of this workflow, instead of the forked repository's workflow
+
+## Note
+
+All rights (except for the data tabulation) go to the original, forked repository.
