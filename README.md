@@ -3,6 +3,10 @@
 This GitHub Action is a fork of [recent-activity](https://github.com/Readme-Workflows/recent-activity) by [Readme-Workflows](https://github.com/Readme-Workflows).  
 It is nearly identical, with the only difference being that the recent activity data is tabulated
 
+## Preview
+
+![image](https://user-images.githubusercontent.com/5704760/187016369-d47b93fa-c53a-4ea2-95ff-8579fcb52df0.png)
+
 ## To Use
 First, copy the existing instructions from the forked repository
 
