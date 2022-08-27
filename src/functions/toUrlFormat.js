@@ -9,33 +9,33 @@ const toUrlFormat = (item, type) => {
     switch (type.toLowerCase()) {
       case "issue_open":
       case "issue_close":
-        url = `[#${item.payload.issue.number}](${item.payload.issue.html_url})`;
+        url = `<a href="${item.payload.issue.html_url}"><b>#${item.payload.issue.number}</b></a>`;
         break;
       case "issue_comment":
-        url = `[#${item.payload.issue.number}](${item.payload.comment.html_url})`;
+        url = `<a href="${item.payload.comment.html_url}"><b>#${item.payload.issue.number}</b></a>`;
         break;
       case "commit_comment":
-        url = `[commit](${item.payload.comment.html_url})`;
+        url = `<a href="${item.payload.comment.html_url}"><b>commit</b></a>`;
         break;
       case "pr_review_comment":
-        url = `[#${item.payload.pull_request.number}](${item.payload.comment.html_url})`;
+        url = `<a href="${item.payload.comment.html_url}"><b>#${item.payload.pull_request.number}</b></a>`;
         break;
       case "pr_open":
       case "pr_close":
       case "pr_merge":
-        url = `[#${item.payload.pull_request.number}](${item.payload.pull_request.html_url})`;
+        url = `<a href="${item.payload.pull_request.html_url}"><b>#${item.payload.pull_request.number}</b></a>`;
         break;
       case "pr_review":
-        url = `[#${item.payload.pull_request.number}](${item.payload.review.html_url})`;
+        url = `<a href="${item.payload.review.html_url}"><b>#${item.payload.pull_request.number}</b></a>`;
         break;
       case "fork":
-        url = `[${item.payload.forkee.full_name}](${item.payload.forkee.html_url})`;
+        url = `<a href="${item.payload.forkee.html_url}"><b>${item.payload.forkee.full_name}</b></a>`;
         break;
       case "wiki":
-        url = `[${item.page_name}](${item.html_url})`;
+        url = `<a href="${item.html_url}"><b>${item.page_name}</b></a>`;
         break;
       case "release":
-        url = `[${item.payload.release.name}](${item.payload.release.html_url})`;
+        url = `<a href="${item.payload.release.html_url}"><b>${item.payload.release.name}</b></a>`;
         break;
       default:
         url = "";
@@ -43,7 +43,7 @@ const toUrlFormat = (item, type) => {
     }
     return url;
   }
-  return `[${item}](${process.env.GITHUB_SERVER_URL}/${item})`;
+  url = `<a href="${process.env.GITHUB_SERVER_URL}/${item}"><b>${item}</b></a>`;
 };
 
 module.exports = toUrlFormat;
