@@ -1,6 +1,6 @@
-name: Recent GitHub Activity - Profile Readme
-description: Add your recent activity to your profile readme!
-author: jamesgeorge007, abhijoshi2k, PuneetGopinath, Andre601
+name: README GitHub Activity - Tabulated
+description: Add your recent activity to your profile readme! This time, in a table!
+author: jamesgeorge007, abhijoshi2k, PuneetGopinath, Andre601, Bonfire
 
 inputs:
   GH_USERNAME:
@@ -13,7 +13,7 @@ inputs:
     required: false
 
 branding:
-  color: orange
+  color: green
   icon: activity
 
 runs:
