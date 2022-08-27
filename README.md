@@ -1,7 +1,9 @@
 # Tabulated Recent Activity
 
 This GitHub Action is a fork of [recent-activity](https://github.com/Readme-Workflows/recent-activity) by [Readme-Workflows](https://github.com/Readme-Workflows).  
-It is nearly identical, with the only difference being that the recent activity data is tabulated
+It is nearly identical, with the only difference being that the recent activity data is tabulated.
+
+This GitHub Action can also be found [on the marketplace](https://github.com/marketplace/actions/readme-github-activity-tabulated).
 
 ## Preview
 
