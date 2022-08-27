@@ -33727,7 +33727,7 @@ Toolkit.run(
       // Add one since the content needs to be inserted just after the initial comment
       startIdx++;
       content.forEach((line, idx) =>
-        readmeContent.splice(startIdx + idx, 0, `${line}`)
+        readmeContent.splice(startIdx + idx, 0, `<tr><td align="center">${line}</td></tr>`)
       );
 
       // Append <!--RECENT_ACTIVITY:end--> comment
@@ -33765,7 +33765,7 @@ Toolkit.run(
       if (!line) {
         return true;
       }
-      readmeContent.splice(startIdx + idx, 0, `${line}`);
+      readmeContent.splice(startIdx + idx, 0, `<tr><td align="center">${line}</td></tr>`);
     });
     readmeContent = appendDate(readmeContent);
     tools.log.success("Updated README with the recent activity");
