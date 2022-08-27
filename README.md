@@ -4,7 +4,7 @@ This GitHub Action is a fork of [recent-activity](https://github.com/Readme-Work
 It is nearly identical, with the only difference being that the recent activity data is tabulated
 
 ## To Use
-First, copy the existing instructions from the forked repository.
+First, copy the existing instructions from the forked repository
 
 Then, in your README file, structure your recent activity like so:
 ```
