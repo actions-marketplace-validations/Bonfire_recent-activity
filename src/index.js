@@ -116,7 +116,7 @@ Toolkit.run(
       if (!line) {
         return true;
       }
-      readmeContent.splice(startIdx + idx, 0, `${idx + 1}. ${line}`);
+      readmeContent.splice(startIdx + idx, 0, `* ${line}`);
     });
     readmeContent = appendDate(readmeContent);
     tools.log.success("Updated README with the recent activity");
